@@ -25,4 +25,4 @@ jobs:
       run: cd broker-service && env GOOS=linux CGO_ENABLED=0 go build -o brokerApp ./cmd/api
       
     - name: BuildFront
-      run: cd ../front-end && env CGO_ENABLED=0 go build -o frontApp ./cmd/web
+      run: cd front-end && env CGO_ENABLED=0 go build -o frontApp ./cmd/web
