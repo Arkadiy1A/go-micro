@@ -22,7 +22,7 @@ jobs:
         go-version: 1.19
 
     - name: BuildBroker
-      run: cd .broker-service && env GOOS=linux CGO_ENABLED=0 go build -o brokerApp ./cmd/api
+      run: cd broker-service && env GOOS=linux CGO_ENABLED=0 go build -o brokerApp ./cmd/api
       
     - name: BuildFront
       run: cd ../front-end && env CGO_ENABLED=0 go build -o frontApp ./cmd/web
